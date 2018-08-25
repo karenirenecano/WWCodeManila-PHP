@@ -20,3 +20,5 @@ Route::get('/create', 'PostController@create');
 Route::get('/post/{id}', 'PostController@showPost')
     ->name('post');
 Route::post('/store', 'PostController@store');
+
+Route::resource('lessons', 'LessonsController');
